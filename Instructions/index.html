@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <!--script src="p5.sound.min.js"></script-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <!-- creating back button -->
+    <button class="backButton"> <a href="../index.html">Back</a></button>
+     <!-- dealing with style of buttons and header -->
+     <style>
+      /* The back button look */
+      .backButton {
+        border: none;
+        color: rgb(255, 72, 0);
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: rgb(250, 168, 199);
+        border: 2px solid rgb(250, 168, 199);
+      }
+
+      /* creates a hover look when mouse on button */
+      .backButton:hover {
+        background-color: #ffffff;
+        color: white;
+      }
+
+      /* style of header */
+      .header {
+        padding: 1px;
+        text-align: center;
+        background: #110101;
+        color: rgb(250, 168, 199);
+        font-size: 30px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <!-- Uses header styling -->
+    <div class="header">
+      <h1>Instructions</h1>
+      <!-- explaining instructions of the game/simulation -->
+      <p>This game is similar to wordle, but the song lengths will vary. This game is based on BLACKPINK'S songs.
+         You will get 5 tries to guess the song. You can click on "hint" to get an image hint based on the song.
+        Once you are done with the game, a link to the video will be given. Click on the letters and it will display
+        on the board. Spaces are also an option as a letter. Click backspace if you want to clear a letter. 
+        Click enter when you want to submit the song. The song will only submit
+        if you have filled in all the tiles. A white tile means that the letter is incorrect.
+        A black tile with pink lettering means the letter is contained in the word, but in the wrong space. 
+        It also can mean that you put too much of a certain letter.
+        A pink tile with black lettering means the letter is in the right place. 
+      </p>
+        <!-- creates image under text -->
+        <img src="blackpink.png" alt="Slide Bar" width= "1200" height="500">
+    </div>
+</body></html>
